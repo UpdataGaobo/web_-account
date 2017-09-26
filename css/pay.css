@@ -1,0 +1,194 @@
+@charset "utf-8";
+/**
+* 支付样式
+*/
+header{
+    position: relative;
+    z-index: 120;
+}
+body{
+    background: #eaeaea;
+    overflow: hidden;
+}
+section{
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+    top: 65px;
+}
+section div:nth-child(1){
+    text-align: center;
+    background: #ddd7d7;
+}
+section div:nth-child(1) img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    margin-top: 10px;
+    margin-bottom: 10px;     
+}
+section div:nth-child(1) aside{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #aca9a9;
+}
+section div:nth-child(2),section div:nth-child(3){
+    padding: 20px;
+}
+section div:nth-child(2) aside:nth-child(1){
+    font-family: "微软雅黑";
+    margin-bottom: 10px;
+}
+section div:nth-child(2) aside:nth-child(2) {
+    position: relative;
+}
+section div:nth-child(2) aside:nth-child(2) span{
+    display: block;
+    height: 35px;
+    width: 20px;
+    background-image: url("../img/back_img.png");
+    background-repeat: no-repeat;
+    background-size: 100% 77%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+section div:nth-child(2) aside:nth-child(2) input{
+    width: 100%;
+    height: 35px;
+    padding-left: 30px;
+    z-index: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+section div:nth-child(2) aside:nth-child(3) span{
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #b1acac;
+}
+section div:nth-child(3) button{
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    font-family: "微软雅黑";
+    color: #fff;
+    background: #2ca736;
+    border:none;
+}
+section div:nth-child(3) button:active{
+    background: #148024;
+    color: #ddcdcd;
+}
+.btn{
+    width: 100%;
+    font-size: 0;
+    position: absolute;
+    bottom: -235px;
+    transition: 1s;
+}
+div .clole{
+    width: 100%;
+    height: 40px;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #b5b5b5;
+    font-family: "微软雅黑";
+}
+div button{
+    width: 33.33%;
+    height: 50px;
+    border: 1px solid #b5b5b5; 
+    font-size: 20px;
+}
+div button:active{
+    background: #148024;
+    color: #ddcdcd;
+}
+.paypass{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.49);
+    z-index: 4;
+    display: none;
+}
+.paypass .paypass_face{
+    position: fixed;
+    left: 50%;
+    top: 29%;
+    transform: translate(-50%,-50%);
+    padding: 10px 20px;
+    background: #fff;
+
+}
+.paypass .paypass_face .face_top {
+    border-bottom: 1px solid #2ca736;
+    padding: 10px 0 10px 0;
+}
+.paypass .paypass_face .face_top span,
+.paypass .paypass_face .face_top a{
+    font-family: "微软雅黑";
+    position: relative;
+    bottom: 10px; 
+    margin-left: 10px;
+}
+.paypass .paypass_face img{
+    width: 40px;
+    height: 40px;
+}
+.paypass .paypass_face .face_center {
+    text-align: center;
+    font-family: "微软雅黑";
+    border-bottom: 1px solid #2ca736;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.paypass .paypass_face .face_center span{
+    font-size: 17px;
+    color: #cb3131;
+}
+
+.paypass .paypass_face .face_bottom{
+    height: 36px;
+    text-align: center;
+}
+.paypass .paypass_face .face_bottom span{
+    display: inline-block;
+    height: 30px;
+    width: 35px;
+    border: 1px solid #ddd;
+    color: #c3c3c3;
+    line-height: 30px;
+    font-family: "微软雅黑";
+}
+/*响应式设置*/
+@media screen and (max-width:450px){
+    .paypass .paypass_face{
+        position: fixed;
+        left: 30%;
+        top: 29%;
+        transform: translate(-18%,-50%);
+    }
+}
+@media screen and (max-width:400px){
+    .paypass .paypass_face{
+        position: fixed;
+        left: 30%;
+        top: 29%;
+        transform: translate(-18%,-50%);
+    }
+}
+@media screen and (max-width:350px){
+    .paypass .paypass_face{
+        position: fixed;
+        left: 21%;
+        top: 29%;
+        transform: translate(-12%,-50%);
+    }
+}

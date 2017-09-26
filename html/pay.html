@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+        <title>个人信息</title>
+        <!--初始化样式-->
+        <link rel="stylesheet" href="../css/style.css">
+        <!--个人信息样式-->
+        <link rel="stylesheet" href="../css/pay.css">
+    </head>
+    <body>
+        <header>
+            <a onclick="window.location.href = '../index.html'">返回</a>
+            <span>个人信息</span>
+        </header>
+        <!--转账部分-->
+        <section>
+            <!--用户显示部分-->
+            <div>
+                <img src="">
+                <aside>
+                    <span></span>
+                </aside>
+            </div>
+             <!--转账操作部分-->
+            <div>
+                <aside>
+                    <span>转账金额</span>
+                </aside>
+                <aside>
+                    <span></span>
+                    <input type="number" class="num" val>
+                </aside>
+                <aside>
+                    <span>添加账户说明</span>
+                </aside>
+            </div>
+            <div>
+                <button type="button">转账</button>
+            </div>
+        </section>
+        <!--按钮部分-->
+        <div class="btn">
+            <button type="button" class="clole">关闭</button>
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <button type="button" value="." id="a">.</button>
+            <button type="button" value="0">0</button>
+            <button type="button" value="x">x</button>
+        </div>
+        <!--弹出层-->
+        <div class= "paypass">
+            <div class="paypass_face">
+                <div class="face_top">
+                    <a>X</a>
+                    <img src="../img/img_1.jpg">
+                    <span>请输入支付密码</span>
+                </div>
+                <div class="face_center">
+                    <div>向&nbsp;<span></span>&nbsp; 转账</div>
+                    <b></b>
+                    <span></span>
+                </div>
+                <div class="face_bottom">
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <!--js部分-->
+        <script src="../js/trans.js"></script>
+    </body>
+</html>
